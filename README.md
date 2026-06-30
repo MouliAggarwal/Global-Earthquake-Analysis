@@ -6,7 +6,7 @@ An end-to-end data analytics project that analyzes global earthquake data using 
 
 ## 📊 Dashboard Preview
 
->![Dashboard Preview](./images/dashboard-preview.png)
+>![Dashboard Preview](Earthquake Analysis Dashboard.png)
 
 ---
 
