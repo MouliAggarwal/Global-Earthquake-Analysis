@@ -6,7 +6,7 @@ An end-to-end data analytics project that analyzes global earthquake data using 
 
 ## 📊 Dashboard Preview
 
-> ("C:\Users\aggar\OneDrive\Desktop\Earthquake Analysis Dashboard.png")
+> ![Dashboard](https://kommodo.ai/i/QaqlJ1tbhgj6xezgCAgy)
 
 ---
 
