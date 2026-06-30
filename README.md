@@ -1,14 +1,14 @@
 # 🌍 Global Earthquake Analysis Dashboard
 
-An end-to-end data analytics project that analyzes global earthquake data using **Google Colab**, **Microsoft Excel**, and **Power BI**. This project focuses on data preprocessing, geographic mapping, and interactive visualization to uncover patterns in earthquake occurrences, magnitudes, depths, and tsunami events.
+An end-to-end data analytics project that analyzes global earthquake data using **Python (Google Colab)**, **Microsoft Excel**, and **Power BI**. The project focuses on data preprocessing, geographic enrichment, and interactive visualization to uncover patterns in earthquake occurrences, magnitudes, depths, tsunami events, and their global distribution.
 
 ---
 
 ## 📊 Dashboard Preview
 
-> *(Add your Power BI dashboard screenshot below)*
+> *(Replace the image path below with your dashboard screenshot)*
 
-![Dashboard](Images/dashboard.png)
+![Dashboard Preview](Images/dashboard.png)
 
 ---
 
@@ -16,7 +16,18 @@ An end-to-end data analytics project that analyzes global earthquake data using 
 
 Earthquakes are among the most destructive natural disasters, making it essential to understand their occurrence, severity, and geographical distribution. This project analyzes a global earthquake dataset to identify trends in earthquake magnitude, depth, tsunami occurrence, and regional distribution.
 
-The dataset was preprocessed using **Google Colab**, refined in **Microsoft Excel**, and visualized using **Power BI** to build an interactive dashboard that provides meaningful insights into global seismic activity.
+The dataset was preprocessed using **Python in Google Colab**, where the **Country** and **Continent** for each earthquake were derived from its **latitude and longitude coordinates using reverse geocoding**. The enriched dataset was then cleaned and formatted in **Microsoft Excel** before being visualized in **Power BI** through an interactive dashboard.
+
+---
+
+# 🔄 Data Preprocessing
+
+Before creating the dashboard, the dataset underwent several preprocessing steps:
+
+- Cleaned and formatted the earthquake dataset.
+- Derived **Country** and **Continent** information from **Latitude** and **Longitude** using **reverse geocoding in Python (Google Colab)**.
+- Standardized categorical values for better visualization.
+- Prepared the final dataset in Microsoft Excel for analysis in Power BI.
 
 ---
 
@@ -32,13 +43,13 @@ The dataset contains earthquake records along with their seismic and geographica
 | Alert | Earthquake alert level (Green, Yellow, Orange, Red) |
 | Tsunami | Indicates whether the earthquake generated a tsunami warning |
 | Significance Score | Overall significance assigned to the earthquake |
-| Magnitude Type | Method used to calculate magnitude |
+| Magnitude Type | Method used to calculate earthquake magnitude |
 | Depth | Depth below the Earth's surface (km) |
 | Latitude | North-South geographic coordinate |
 | Longitude | East-West geographic coordinate |
 | Location | Earthquake location |
-| Country | Country where the earthquake occurred |
-| Continent | Continent where the earthquake occurred |
+| Country | Country where the earthquake occurred (derived using reverse geocoding) |
+| Continent | Continent where the earthquake occurred (derived using reverse geocoding) |
 
 ---
 
@@ -48,7 +59,7 @@ The dataset contains earthquake records along with their seismic and geographica
 
 ### What it shows
 
-Summary cards displaying important earthquake statistics.
+Summary cards displaying key earthquake statistics.
 
 **KPIs Included**
 
@@ -60,7 +71,7 @@ Summary cards displaying important earthquake statistics.
 
 ### Insight
 
-The KPI section provides a quick overview of the dataset by summarizing earthquake strength, average depth, tsunami occurrence, and the geographical coverage of recorded events.
+The KPI section provides a quick overview of the dataset by summarizing earthquake strength, depth, tsunami occurrence, and geographical coverage.
 
 ---
 
@@ -68,17 +79,17 @@ The KPI section provides a quick overview of the dataset by summarizing earthqua
 
 ### What it shows
 
-A world map displaying earthquake locations using latitude and longitude coordinates.
+A world map displaying earthquake locations using latitude and longitude.
 
 ### Findings
 
 - Earthquakes are distributed across multiple continents.
-- Most earthquake events are concentrated around tectonic plate boundaries.
-- Regions along the Pacific Ring of Fire experience the highest seismic activity.
+- The highest concentration of earthquakes occurs along tectonic plate boundaries.
+- Regions within the Pacific Ring of Fire experience the greatest seismic activity.
 
 ### Insight
 
-The visualization clearly demonstrates that earthquakes are concentrated around active tectonic plate boundaries rather than being randomly distributed.
+The visualization demonstrates that earthquake occurrences are closely linked to tectonic plate boundaries rather than being randomly distributed.
 
 ---
 
@@ -86,17 +97,17 @@ The visualization clearly demonstrates that earthquakes are concentrated around 
 
 ### What it shows
 
-A comparison of earthquake occurrences across different continents.
+A comparison of earthquake occurrences across continents.
 
 ### Findings
 
 - Oceania recorded the highest number of earthquakes.
-- Asia and South America also experienced considerable seismic activity.
+- Asia and South America also experienced significant seismic activity.
 - Europe and Africa recorded comparatively fewer earthquake events.
 
 ### Insight
 
-The higher earthquake frequency in Oceania reflects its location within the Pacific Ring of Fire, one of the world's most active seismic zones.
+The higher earthquake frequency in Oceania reflects its location within the Pacific Ring of Fire, one of the world's most active seismic regions.
 
 ---
 
@@ -108,12 +119,12 @@ Comparison of the average depth of earthquakes across continents.
 
 ### Findings
 
-- Average earthquake depth differs significantly between continents.
-- Some regions experience predominantly shallow earthquakes, while others record deeper seismic events.
+- Earthquake depths vary considerably between continents.
+- Some continents experience predominantly shallow earthquakes, while others record deeper seismic events.
 
 ### Insight
 
-Earthquake depth plays a major role in determining surface impact. Shallow earthquakes generally cause stronger ground shaking than deeper earthquakes of similar magnitude.
+Earthquake depth significantly influences surface impact, with shallow earthquakes generally causing stronger ground shaking.
 
 ---
 
@@ -121,17 +132,17 @@ Earthquake depth plays a major role in determining surface impact. Shallow earth
 
 ### What it shows
 
-A scatter plot illustrating the relationship between earthquake depth and magnitude.
+A scatter plot comparing earthquake depth and magnitude.
 
 ### Findings
 
-- Earthquakes of similar magnitudes occur at different depths.
-- Strong earthquakes can occur at both shallow and deep depths.
-- No clear linear relationship exists between depth and magnitude.
+- Earthquakes of similar magnitudes occur at varying depths.
+- High-magnitude earthquakes can occur at both shallow and deep depths.
+- No strong linear relationship exists between depth and magnitude.
 
 ### Insight
 
-Magnitude and depth represent different characteristics of an earthquake and do not necessarily increase together.
+Earthquake magnitude and depth represent different characteristics of seismic events and do not necessarily increase together.
 
 ---
 
@@ -144,11 +155,11 @@ Distribution of earthquakes based on whether they generated tsunami warnings.
 ### Findings
 
 - Most earthquakes did not generate tsunami warnings.
-- Only a relatively small proportion resulted in tsunami events.
+- Only a small proportion of earthquakes resulted in tsunami events.
 
 ### Insight
 
-Although earthquakes occur frequently, only certain underwater earthquakes with sufficient magnitude and vertical displacement generate tsunamis.
+Although earthquakes occur frequently, only certain underwater earthquakes with sufficient magnitude and displacement generate tsunamis.
 
 ---
 
@@ -161,32 +172,20 @@ Distribution of earthquake alert levels.
 ### Findings
 
 - Most earthquakes fall under lower alert categories.
-- Only a small number of earthquakes receive Orange or Red alerts.
+- Only a few earthquakes receive Orange or Red alerts.
 
 ### Insight
 
-Higher alert levels are issued only when earthquakes are expected to cause significant damage or pose substantial risks to nearby populations.
+Higher alert levels are issued only for earthquakes expected to cause significant damage or pose serious risks to nearby populations.
 
 ---
 
 # 🛠️ Tools & Technologies
 
-- **Google Colab** — Data preprocessing and transformation
-- **Microsoft Excel** — Data cleaning and formatting
-- **Microsoft Power BI** — Interactive dashboard development
+- **Python (Google Colab)** – Data preprocessing and reverse geocoding
+- **Microsoft Excel** – Data cleaning and formatting
+- **Microsoft Power BI** – Interactive dashboard development and visualization
 
 ---
 
-# 📌 Key Insights
-
-- Oceania experienced the highest number of recorded earthquake events.
-- Earthquakes are primarily concentrated along tectonic plate boundaries.
-- Most recorded earthquakes did not generate tsunami warnings.
-- Earthquake depth varies considerably across continents.
-- No strong relationship exists between earthquake depth and magnitude.
-- Interactive filters allow users to explore earthquakes by continent, country, and alert level.
-
----
-
-
-⭐ **If you found this project helpful, consider giving the repository a star!**
+⭐ **If you found this project helpful, consider giving this repository a star!**
