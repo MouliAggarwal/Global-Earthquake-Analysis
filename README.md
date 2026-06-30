@@ -178,7 +178,7 @@ Higher alert levels are issued only for earthquakes expected to cause significan
 
 ---
 
-# Tools & Technologies
+# Tools
 
 - **Python (Google Colab)** – Data preprocessing and reverse geocoding
 - **Microsoft Excel** – Data cleaning and formatting
