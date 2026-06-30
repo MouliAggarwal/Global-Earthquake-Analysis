@@ -29,7 +29,6 @@ The dataset contains earthquake records along with their seismic and geographica
 | Magnitude | Strength of the earthquake |
 | Date & Time | Date and time when the earthquake occurred |
 | Community Determined Intensity (CDI) | Intensity reported by people who experienced the earthquake |
-| Modified Mercalli Intensity (MMI) | Estimated shaking intensity and damage |
 | Alert | Earthquake alert level (Green, Yellow, Orange, Red) |
 | Tsunami | Indicates whether the earthquake generated a tsunami warning |
 | Significance Score | Overall significance assigned to the earthquake |
