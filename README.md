@@ -10,7 +10,7 @@ An end-to-end data analytics project that analyzes global earthquake data using 
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 Earthquakes are among the most destructive natural disasters, making it essential to understand their occurrence, severity, and geographical distribution. This project analyzes a global earthquake dataset to identify trends in earthquake magnitude, depth, tsunami occurrence, and regional distribution.
 
@@ -18,7 +18,7 @@ The dataset was preprocessed using **Python in Google Colab**, where the **Count
 
 ---
 
-# 🔄 Data Preprocessing
+# Data Preprocessing
 
 Before creating the dashboard, the dataset underwent several preprocessing steps:
 
@@ -29,7 +29,7 @@ Before creating the dashboard, the dataset underwent several preprocessing steps
 
 ---
 
-# 📂 Dataset Description
+# Dataset Description
 
 The dataset contains earthquake records along with their seismic and geographical characteristics.
 
@@ -51,7 +51,7 @@ The dataset contains earthquake records along with their seismic and geographica
 
 ---
 
-# 📈 Dashboard Walkthrough
+# Dashboard Walkthrough
 
 ## 1. Key Performance Indicators (KPIs)
 
@@ -178,7 +178,7 @@ Higher alert levels are issued only for earthquakes expected to cause significan
 
 ---
 
-# 🛠️ Tools & Technologies
+# Tools & Technologies
 
 - **Python (Google Colab)** – Data preprocessing and reverse geocoding
 - **Microsoft Excel** – Data cleaning and formatting
