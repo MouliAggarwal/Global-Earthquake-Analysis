@@ -6,7 +6,7 @@ An end-to-end data analytics project that analyzes global earthquake data using 
 
 ## 📊 Dashboard Preview
 
-> "C:\Users\aggar\OneDrive\Desktop\Earthquake Analysis Dashboard.png"
+> ("C:\Users\aggar\OneDrive\Desktop\Earthquake Analysis Dashboard.png")
 
 ---
 
