@@ -6,8 +6,7 @@ An end-to-end data analytics project that analyzes global earthquake data using 
 
 ## 📊 Dashboard Preview
 
-> ![Dashboard]([Earthquake Analysis Dashboard.png](https://github.com/MouliAggarwal/Global-Earthquake-Analysis/blob/cb15f36805f7d19ca20e964420256a5567078182/Earthquake%20Analysis%20Dashboard.png)
-
+> https://github.com/MouliAggarwal/Global-Earthquake-Analysis/blob/main/Earthquake%20Analysis%20Dashboard.png
 ---
 
 # 📌 Project Overview
